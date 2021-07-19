@@ -16,7 +16,7 @@ function MovieDetails(props) {
   const history = useHistory()
 
   return (
-    <div className="movie-card" onClick={item => history.push('movies/${props.movie.id}')}>
+    <div className="movie-card" onClick={() => history.push('movies/${props.movie.id}')}>
       <h2>{title}</h2>
       <div className="movie-director">
         Director: <em>{director}</em>
